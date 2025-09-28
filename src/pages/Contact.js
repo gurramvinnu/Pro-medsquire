@@ -14,18 +14,61 @@ function Contact() {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const { name, phone, email } = formData;
-    if (name && phone && email) {
-      setToast({ show: true, message: "✅ Thank you! Your details have been submitted successfully.", error: false });
-      setFormData({ name: "", phone: "", email: "", message: "" });
-    } else {
-      setToast({ show: true, message: "⚠️ Please fill in all required fields.", error: true });
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  const { name, phone, email, message } = formData;
+
+  if (name && phone && email) {
+    try {
+      const response = await fetch("https://backend-medsquire.onrender.com/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          // optionally add auth headers etc
+        },
+        body: JSON.stringify({ name, phone, email, message }),
+      });
+
+      if (response.ok) {
+        setToast({
+          show: true,
+          message: "✅ Thank you! Your details have been submitted successfully.",
+          error: false,
+        });
+        setFormData({ name: "", phone: "", email: "", message: "" });
+      } else {
+        // Could parse error message from the server
+        const errData = await response.json().catch(() => ({}));
+        setToast({
+          show: true,
+          message:
+            errData.error ||
+            "⚠️ Failed to submit. Please try again later.",
+          error: true,
+        });
+      }
+    } catch (err) {
+      console.error("Submission error:", err);
+      setToast({
+        show: true,
+        message: "⚠️ Network or server error. Please try again later.",
+        error: true,
+      });
     }
-    clearTimeout(toastTimeout.current);
-    toastTimeout.current = setTimeout(() => setToast({ ...toast, show: false }), 3000);
-  };
+  } else {
+    setToast({
+      show: true,
+      message: "⚠️ Please fill in all required fields.",
+      error: true,
+    });
+  }
+
+  clearTimeout(toastTimeout.current);
+  toastTimeout.current = setTimeout(() => {
+    setToast((prev) => ({ ...prev, show: false }));
+  }, 3000);
+};
+
 
   const handlePhoneClick = () => {
     window.location.href = "tel:+919912382221";
