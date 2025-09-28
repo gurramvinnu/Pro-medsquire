@@ -23,8 +23,8 @@ function About() {
               rather than just memorizing theory.
             </p>
             <p>
-              What makes us different is our unique training methodology. With a <strong>4-day workweek format</strong>
-              (Friday to Monday, 10:00 AM – 7:00 PM), we recreate real corporate hours and discipline. This way, our
+              What makes us different is our unique training methodology. Timing 10:00 AM – 7:00 PM <strong>24 Hours open</strong>
+              , we recreate real corporate hours and discipline. This way, our
               students graduate not only with strong technical expertise but also with the confidence and professional
               habits needed to excel in the IT world.
             </p>
