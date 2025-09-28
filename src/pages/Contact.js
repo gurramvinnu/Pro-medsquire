@@ -102,13 +102,15 @@ const handleSubmit = async (e) => {
             </div>
             <div className="form-group">
               <label htmlFor="phone">Phone Number</label>
-              <input
+             <input
                 type="tel"
                 id="phone"
+                name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                required
-              />
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required 
+                />
             </div>
             <div className="form-group">
               <label htmlFor="email">Email Address</label>
