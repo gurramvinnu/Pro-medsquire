@@ -590,6 +590,7 @@ nav ul li a:hover::after {
 }
 
 /* About Page */
+
 .about-content {
     display: flex;
     flex-wrap: wrap;
@@ -610,7 +611,7 @@ nav ul li a:hover::after {
 
 .about-stats {
     flex: 1;
-   min-width: 250px;
+    min-width: 250px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -622,6 +623,20 @@ nav ul li a:hover::after {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     text-align: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.stat-item:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+}
+
+.stat-item:hover .stat-number {
+    color: #fff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .stat-number {
@@ -629,7 +644,13 @@ nav ul li a:hover::after {
     font-weight: 700;
     color: var(--primary);
     margin-bottom: 10px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
+
+.stat-item:hover .stat-number {
+    transform: scale(1.1);
+}
+
 
 /* Footer */
 footer {
