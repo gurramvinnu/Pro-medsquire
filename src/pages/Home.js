@@ -8,6 +8,11 @@ import chandrani_m from '../assets/chandrani_m.jpeg';
 import vinay_chaityana from '../assets/vinay_chaityana.jpeg';
 import vinay_d from '../assets/vinay_d.jpeg';
 import rakesh_l from '../assets/rakesh_l.JPG';
+import kiran from '../assests/kiran.jpeg';
+import sanjana from '../assests/Sanjana.jpeg';
+import keerthi from '../assests/keerthi.jpeg';
+import suman from '../assests/suman.jpeg';
+import rajya from '../assests/rajya.jpeg';
 
 // Hero Section Component
 const HeroSection = () => {
