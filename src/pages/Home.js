@@ -12,6 +12,7 @@ import kiran from '../assests/kiran.jpeg';
 import sanjana from '../assests/Sanjana.jpeg';
 import keerthi from '../assests/keerthi.jpeg';
 import suman from '../assests/suman.jpeg';
+
 import rajya from '../assests/rajya.jpeg';
 
 // Hero Section Component
