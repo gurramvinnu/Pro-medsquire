@@ -277,7 +277,14 @@ const ReviewsSection = () => {
 
 // Placement Section (Enhanced)
 const PlacementSection = () => {
-  const placementData = [
+ const placementData = [
+    { 
+      name: "Chandrani Madhira", 
+      role: "Partner Technical Advisor", 
+      company: "Microsoft",
+      package: "₹ 9.0 LPA",
+      image: chandrani_m
+    },
     { 
       name: "Arun Sai Katta", 
       role: "Software Developer", 
@@ -286,11 +293,53 @@ const PlacementSection = () => {
       image: arun
     },
     { 
-      name: "Chandrani Madhira", 
-      role: "Partner Technical Advisor", 
-      company: "Microsoft",
-      package: "₹ 9.0 LPA",
-      image: chandrani_m
+      name: "Bannu Akkabattula", 
+      role: "Software Developer", 
+      company: "Vivan Global",
+      package: "₹ 5.0 LPA",
+      image: bannu
+    },
+    { 
+      name: "Rajyalakshmi Chava", 
+      role: "Software Engineer", 
+      company: "Warrous",
+      package: "₹ 6.0 LPA",
+      image: rajya
+    },
+    { 
+      name: "Kiran Kumar Palaparthi", 
+      role: "Software Developer", 
+      company: "INOVAR",
+      package: "₹ 7.2 LPA",
+      image: kiran
+    },
+    { 
+      name: "Sanjana Atluri", 
+      role: "Software Engineer", 
+      company: "Eshipject",
+      package: "₹ 5.5 LPA",
+      image: sanjana
+    },
+    { 
+      name: "Vinay Dasari", 
+      role: "Software Developer", 
+      company: "Tekreant",
+      package: "₹ 5.6 LPA",
+      image: vinay_d
+    },
+    { 
+      name: "Keerthi Sana", 
+      role: "Software Engineer", 
+      company: "Wipro",
+      package: "₹ 4.8 LPA",
+      image: keerthi
+    },
+    { 
+      name: "Rakesh Lakkam", 
+      role: "Software Engineer", 
+      company: "Computer Solution LLP",
+      package: "₹ 7.0 LPA",
+      image: rakesh_l
     },
     { 
       name: "Vinay Chaitanya", 
@@ -307,18 +356,11 @@ const PlacementSection = () => {
       image: ravali_d
     },
     { 
-      name: "Vinay D", 
+      name: "Suman Raj Vulli", 
       role: "Software Developer", 
-      company: "Tekreant",
-      package: "₹ 5.6 LPA",
-      image: vinay_d
-    },
-    { 
-      name: "Rakesh Lakkam", 
-      role: "Software Engineer", 
-      company: "Computer Solution",
-      package: "₹6.2 LPA",
-      image: rakesh_l
+      company: "Senwell Group",
+      package: "₹ 5.0 LPA",
+      image: suman
     },
   ];
 
