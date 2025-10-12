@@ -33,7 +33,7 @@ function Footer() {
           </div>
           <div className="contact-item">
             <div className="contact-icon"><i className="fas fa-phone"></i></div>
-            <div><p>+91 99123 82221</p></div>
+            <div><p>+91 90143 12221</p></div>
           </div>
           <div className="contact-item">
             <div className="contact-icon"><i className="fas fa-envelope"></i></div>
