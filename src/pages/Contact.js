@@ -29,7 +29,7 @@ function Contact() {
   };
 
   const handlePhoneClick = () => {
-    window.location.href = "tel:+919912382221";
+    window.location.href = "tel:+91 90143 12221";
   };
 
   const handleEmailClick = () => {
