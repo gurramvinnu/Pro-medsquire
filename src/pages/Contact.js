@@ -29,7 +29,7 @@ function Contact() {
   };
 
   const handlePhoneClick = () => {
-    window.location.href = "tel:+91 90143 12221";
+    window.location.href = "tel:+919014312221";
   };
 
   const handleEmailClick = () => {
@@ -99,7 +99,7 @@ function Contact() {
                 </div>
                 <div>
                   <h4>Phone</h4>
-                  <p>+91 99123 82221</p>
+                  <p>+91 90143 12221</p>
                 </div>
               </div>
               <div className="contact-item" onClick={handleEmailClick} style={{ cursor: "pointer" }}>
