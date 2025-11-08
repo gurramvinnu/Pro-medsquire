@@ -14,6 +14,7 @@ import bannu from '../assets/Bannu.jpeg';
 import keerthi from '../assets/keerthi.jpeg';
 import suman from '../assets/suman.jpeg';
 import rajya from '../assets/rajya.jpeg';
+import liltha from '../assets/lilitha.jpg';
 
 // Import company logos
 import microsoftLogo from '../assets/microsoft.png';
@@ -25,6 +26,7 @@ import eshipjectLogo from '../assets/Eshipject.png';
 import wiproLogo from '../assets/wipro.png';
 import computerSolutionLogo from '../assets/computer-solution.png';
 import senwellLogo from '../assets/senwell.png';
+import zenuslogo from '../assets/zenus_group.jpg';
 
 // Import section images
 import section1Image from '../assets/section11.png';
@@ -448,10 +450,17 @@ const StudentDiversitySection = () => {
 // Section 6: Placements Section
 const PlacementSection = () => {
   const placementData = [
+   { 
+      name: "B lalitha Bhashini", 
+      role: "Software Developer", 
+      package: "₹ 6.0 LPA",
+      image: liltha,
+      logo: zenuslogo
+    },
     { 
-      name: "Chandrani Madhira", 
+    
+     name: "Chandrani Madhira", 
       role: "Partner Technical Advisor", 
-  
       package: "₹ 9.0 LPA",
       image: chandrani_m,
       logo: microsoftLogo
