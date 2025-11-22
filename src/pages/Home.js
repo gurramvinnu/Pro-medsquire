@@ -26,7 +26,7 @@ import eshipjectLogo from '../assets/Eshipject.png';
 import wiproLogo from '../assets/wipro.png';
 import computerSolutionLogo from '../assets/computer-solution.png';
 import senwellLogo from '../assets/senwell.png';
-import zenuslogo from '../assets/zenus_group.jpg';
+import infosys from '../assets/infosys.jpg';
 
 // Import section images
 import section1Image from '../assets/section11.png';
@@ -455,7 +455,7 @@ const PlacementSection = () => {
       role: "Software Developer", 
       package: "₹ 6.0 LPA",
       image: liltha,
-      logo: zenuslogo
+      logo: infosys
     },
     { 
     
@@ -555,23 +555,6 @@ const PlacementSection = () => {
   ];
 
   const scrollRef = useRef(null);
-  const [visibleCount, setVisibleCount] = useState(4);
-
-  useEffect(() => {
-    const updateVisibleCount = () => {
-      if (window.innerWidth >= 1200) {
-        setVisibleCount(4);
-      } else if (window.innerWidth >= 768) {
-        setVisibleCount(3);
-      } else {
-        setVisibleCount(1);
-      }
-    };
-
-    updateVisibleCount();
-    window.addEventListener('resize', updateVisibleCount);
-    return () => window.removeEventListener('resize', updateVisibleCount);
-  }, []);
 
   const scrollLeft = () => {
     if (scrollRef.current) {
