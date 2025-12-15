@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#4f46e5" />
+      <stop offset="1" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#g)" rx="16" />
+  <g fill="#fff" font-family="Arial, Helvetica, sans-serif">
+    <text x="40" y="80" font-size="28" font-weight="700">Frontend Development</text>
+    <text x="40" y="120" font-size="16" opacity="0.9">Building Professional User Experiences</text>
+    <rect x="40" y="160" width="220" height="140" fill="rgba(255,255,255,0.06)" rx="8" />
+    <text x="60" y="200" font-size="14">HTML • CSS • JavaScript • React</text>
+  </g>
+</svg>

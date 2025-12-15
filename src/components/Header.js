@@ -101,6 +101,15 @@ function Header() {
                 <span>About</span>
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink 
+                to="/blogs" 
+                className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+              >
+                <i className="fas fa-blog"></i>
+                <span>Blogs</span>
+              </NavLink>
+            </li>
           </ul>
         </nav>
 
